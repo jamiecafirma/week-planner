@@ -7,10 +7,21 @@ a {
   color: #000;
 }
 
+#add-modal-view {
+  position: fixed;
+  width: 100%;
+}
+
 .black-bg {
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 100vh;
+}
+
+.pop-up {
+  width: 900px;
+  height: 375px;
+  background-color: white;
 }
 
 .justify-center {
@@ -18,8 +29,12 @@ a {
   justify-content: center;
 }
 
-.text-center {
+.align-center {
   display: flex;
+  align-items: center;
+}
+
+.text-center {
   text-align: center;
 }
 
