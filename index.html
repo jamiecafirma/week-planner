@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,8 @@
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-
 <body>
-  <div class="view" id="add-modal-view" data-view="add-modal">
+  <div class="view hidden" id="add-modal-view" data-view="add-modal">
     <div class="black-bg justify-center align-center">
       <div class="pop-up">
         <div class="row">
@@ -43,15 +41,17 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="column-full justify-center">
-        <h1>Weekly Planner</h1>
+  <div class="view" id="events-view" data-view="events">
+    <div class="container">
+      <div class="row">
+        <div class="column-full justify-center">
+          <h1>Weekly Planner</h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="column-full justify-center">
-        <a href="#" class="entry-button button-border">Add Entry</a>
+      <div class="row">
+        <div class="column-full justify-center">
+          <a href="#" class="entry-button button-border" id="add-entry-button" data-view="add-modal">Add Entry</a>
+        </div>
       </div>
     </div>
   </div>

@@ -1,5 +1,8 @@
+var $views = document.querySelectorAll('.view');
+var $addEntryButton = document.querySelector('#add-entry-button');
+
 var data = {
-  view: 'entry-form',
+  view: 'events',
   days: {
     sunday: [],
     monday: [],
@@ -27,7 +30,6 @@ window.addEventListener('beforeunload', handleAddLocalStorage
 );
 
 var $eventForm = document.querySelector('#event-form');
-var $submitButton = document.querySelector('#submit-button');
 
 function handleAddEntry(event) {
   event.preventDefault();
@@ -36,6 +38,26 @@ function handleAddEntry(event) {
   formData.time = $eventForm.time.value;
   formData.description = $eventForm.description.value;
   data.days[$eventForm.day.value].push(formData);
+
+  swapViews('events');
 }
 
 $eventForm.addEventListener('submit', handleAddEntry);
+
+function swapViews(view) {
+  for (var i = 0; i < $views.length; i++) {
+    if ($views[i].getAttribute('data-view') === view) {
+      $views[i].className = 'view';
+    } else {
+      $views[i].className = 'view hidden';
+    }
+  }
+  data.view = view;
+}
+
+function switchToAdd(event) {
+  var $dataView = event.target.getAttribute('data-view');
+  swapViews($dataView);
+}
+
+$addEntryButton.addEventListener('click', switchToAdd);
