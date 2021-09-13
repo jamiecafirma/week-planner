@@ -14,12 +14,30 @@
   <div class="view" id="add-modal-view" data-view="add-modal">
     <div class="black-bg justify-center align-center">
       <div class="pop-up">
-        <div class="row justify-center">
-          <h1>Add Entry</h1>
+        <div class="row">
+          <div class="column-full justify-center">
+            <h1>Add Entry</h1>
+          </div>
         </div>
         <form>
-          <div class="row"></div>
-          <div class="row"></div>
+          <div class="row mb-one-and-half-rem">
+            <div class="column-full">
+              <select name="day" id="day" class="black-border">
+                <option value="">Day of Week</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+              <input type="time" class="black-border">
+            </div>
+          </div>
+          <div class="row">
+            <textarea name="description" id="description" placeholder="Description" class="black-border"></textarea>
+          </div>
         </form>
       </div>
     </div>

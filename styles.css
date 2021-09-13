@@ -2,6 +2,13 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+textarea {
+  color: black;
+  font-family: 'Helvetica Neue', sans-serif;
+  resize: none;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -22,6 +29,11 @@ a {
   width: 900px;
   height: 375px;
   background-color: white;
+  padding: 0 3rem 3rem;
+}
+
+.black-border {
+  border: 2px solid black;
 }
 
 .justify-center {
@@ -41,6 +53,10 @@ a {
 .flex-end {
   display: flex;
   justify-content: flex-end;
+}
+
+.mb-one-and-half-rem {
+  margin-bottom: 1.5rem;
 }
 
 .button-border {
