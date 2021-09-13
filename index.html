@@ -19,7 +19,7 @@
             <h1>Add Entry</h1>
           </div>
         </div>
-        <form>
+        <form id="event-form">
           <div class="row mb-one-and-half-rem">
             <div class="column-full">
               <select name="day" id="day" class="black-border mr-one-rem">
@@ -32,12 +32,12 @@
                 <option value="Friday">Friday</option>
                 <option value="Saturday">Saturday</option>
               </select>
-              <input type="time" class="black-border">
+              <input type="time" name="time" class="black-border">
             </div>
           </div>
           <div class="row flex-end">
             <textarea name="description" id="description" placeholder="Description" class="black-border"></textarea>
-            <button type="submit" class="button-border">Submit</button>
+            <button type="submit" class="button-border" id="submit-button">Submit</button>
           </div>
         </form>
       </div>
