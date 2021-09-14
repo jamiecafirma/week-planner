@@ -17,8 +17,16 @@
   width: 100%;
 }
 
+.column-three-fourth {
+  width: 75%;
+}
+
 .column-half {
   width: 50%;
+}
+
+.column-fourth {
+  width: 25%;
 }
 
 /* @media screen and (min-width: 768px) {
