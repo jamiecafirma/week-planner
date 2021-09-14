@@ -56,6 +56,11 @@ a {
   align-items: center;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .text-center {
   text-align: center;
 }
@@ -82,4 +87,13 @@ a {
 
 .entry-button:hover {
   background-color: #95bcf2;
+}
+
+.day-button {
+  width: 11%;
+  padding: 2rem 0;
+}
+
+.day-button:hover {
+  background-color: #ddd;
 }
